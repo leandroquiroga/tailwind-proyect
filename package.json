@@ -1,0 +1,34 @@
+{
+  "name": "tailwind-proyect-inital",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "build:css": "postcss ./public/css/tailwind.css -o src/css/main.css",
+    "prod": "NODE_ENV=production postcss ./public/css/tailwind.css -o src/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandroquiroga/tailwind-proyect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandroquiroga/tailwind-proyect/issues"
+  },
+  "homepage": "https://github.com/leandroquiroga/tailwind-proyect#readme",
+  "devDependencies": {
+    "postcss": "^8.3.9"
+  },
+  "dependencies": {
+    "@tailwindcss/jit": "^0.1.18",
+    "autoprefixer": "^10.3.7",
+    "parcel": "^2.0.0",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.17",
+    "win-node-env": "^0.4.0"
+  }
+}
