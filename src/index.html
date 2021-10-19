@@ -8,24 +8,44 @@
         <title>Document</title>
     </head>
     <body>
-        <div class=' container mx-auto bg-gray-700'>
+        <div class='w-full mx-auto bg-gray-700 2xl:container'>
             <nav class=" nav-link">    
                 <article class="logo p-2">
                     <img src="./assets/img/logo.png" class="w-11/12  alt="logo">
                 </article>
-                <article class="links p-2 lg:block hidden md:w-4/6">
-                    <ul class="menu flex items-end justify-center">
-                        <li class="block font-bold text-white mx-4"><a href="#">Home</a></li>
-                        <li class="block font-bold text-white mx-4"><a href="#">Plar Together</a></li>
-                        <li class="block font-bold text-white mx-4"><a href="#">Explorer</a></li>
-                        <li class="block font-bold text-white mx-4"><a href="#">Bowser Fury</a></li>
-                        <li class="block font-bold text-white mx-4"><a href="#">Buy Now</a></li>
+                <article class="links p-2 w-1/6 lg:block hidden md:w-4/6">
+                    <ul class="menu flex items-end justify-end">
+                        <li><a href="#" class="ancla">Home</a></li>
+                        <li><a href="#" class="ancla">Plar Together</a></li>
+                        <li><a href="#" class="ancla">Explorer</a></li>
+                        <li><a href="#" class="button">Bowser Fury</a></li>
+                        <li><a href="#" class="button-buy">Buy Now</a></li>
+                    </ul>
+                </article>
+
+                <!-- Menu Desplegable -->
+                <article class="block lg:hidden w-1/6 lg:4/6">
+                    <img src="./assets/svg/menu.svg" alt="menu" id="mobile-menu" class="w-12 cursor-pointer">
+                    <ul class="mobile-link mt-5 hidden p-2 w-full absolute z-50 left-0 text-center bg-gray-700">
+                        <li class="my-3"><a href="#" class="ancla">Home</a></li>
+                        <li class="my-3"><a href="#" class="ancla">Plar Together</a></li>
+                        <li class="my-3"><a href="#" class="ancla">Explorer</a></li>
+                        <li class="mb-6"><a href="#" class="button">Bowser Fury</a></li>
+                        <li class="mb-6"><a href="#" class="button-buy">Buy Now</a></li>
                     </ul>
                 </article>
             </nav>
+            <main>
+                <section class="header">
+                    <img src="./assets/img/hero.jpg">
+                </section>
+
+                <section>
+                    <div class="bg-wave-pattern h-6 bg-repeat relative -top-2"></div>
+                </section>
+            </main>
+            <footer></footer>
         </div>
-        <main></main>
-        <footer></footer>
         <script type="module" src="./js/index.js"></script>
     </body>
 </html>
