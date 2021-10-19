@@ -5,3 +5,12 @@
 .nav-link{
     @apply flex justify-between items-center;
 }
+.ancla{
+   @apply block font-bold text-white mx-4 hover:text-indigo-400;
+}
+.button{
+    @apply border-4 text-white border-none bg-indigo-400 font-bold p-2 rounded-full mx-1 hover:bg-indigo-900  transition duration-700;
+}
+.button-buy{
+    @apply border-4 text-white border-none bg-red-500 font-bold p-2 rounded-full mx-1 hover:bg-red-400 transition duration-700;
+}
