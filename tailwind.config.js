@@ -4,7 +4,11 @@ module.exports = {
     ],
     dartkMode: false, // or 'media' or 'class'
     theme: {
-        extend: {}
+        extend: {
+            backgroundImage: theme => ({
+                'wave-pattern': 'url(../assets/img/wave-white.png)'
+            }) 
+        }
     },
     variants: {
         extend: {}
